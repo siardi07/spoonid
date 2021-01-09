@@ -76,7 +76,7 @@ def login(nomor, password):
     except:
         print(traceback.format_exc())
         print(tokens)
-        print("id/password akun salah atau diban")
+        print("id/anjim password salah bego")
         return 0
 
 def gantiid(config):
@@ -104,7 +104,7 @@ def gantiid(config):
 if __name__ == '__main__':
     #input
 
-    print("Script untuk ganti id by IAV\nNo phising phising club g4 Go3N4\njoin group telegram sini script gratis https://t.me/joinchat/UPFZEKRg6jTVdpCv\n\n\ncontoh : 6285155415154")
+    print("Hai kalian salam kenal dari aku Awvirgo\ncontoh : 6212345678910")
     nomor = input("Masukkan nomor telepon yang terhubung pada akun : ")
     password = input("Masukkan password : ")
 
@@ -116,7 +116,7 @@ if __name__ == '__main__':
     ref = login(nomor, password)
     #login handler
     if ref == 0:
-        print("id/password salah atau akun diban . silahkan ganti akun")
+        print("id/anjim password salah bego . silahkan ganti akun")
         os.execv(sys.executable, ['python'] + sys.argv)
 
     with open(jsondb, "r") as jsonFile:
